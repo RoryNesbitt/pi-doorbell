@@ -8,15 +8,18 @@ from http import server
 PAGE="""\
 <html>
 <head>
-<title>picamera MJPEG streaming demo</title>
+<title>Pi-Doorbell</title>
 </head>
 <body>
-<h1>PiCamera MJPEG Streaming Demo</h1>
+<h1>Pi-Doorbell</h1>
+<p>Doorbell Camera</p>
 <img src="stream.mjpg" width="640" height="480" />
 </body>
 </html>
 """
 
+# This code is almost identical to the Web Streaming example
+# for the pi cam. No need to remake what works.
 class StreamingOutput(object):
     def __init__(self):
         self.frame = None
